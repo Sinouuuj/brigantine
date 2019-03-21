@@ -1,0 +1,10 @@
+@import "../helpers/variables";
+
+h1 {
+  text-transform: uppercase;
+  color: $white;
+}
+
+* {
+  box-sizing: border-box;
+}

@@ -44,11 +44,12 @@ gulp.task('watch', function () {
   browserSync.init({
     open: true,
     browser: "google chrome",
-    proxy: "localhost:3300"
+    proxy: "localhost:8888/brigantine"
   });
 
   gulp.watch(sass_dir+'/**/*.scss', ['sass']);
-  gulp.watch("**/*.pug").on('change', browserSync.reload);
+  gulp.watch("**/*.html").on('change', browserSync.reload);
+  gulp.watch("*.html").on('change', browserSync.reload);
   // gulp.watch(js_dir+'/*.js').on('change', function(state){
   //   console.log(state.path);
   //   currentFile = state.path;
