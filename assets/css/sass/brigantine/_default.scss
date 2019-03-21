@@ -4,7 +4,33 @@ h1 {
   text-transform: uppercase;
   color: $white;
 }
-
+h3 {
+  color: $coral;
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
 * {
   box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+section {
+  position: relative;
+}
+.cta {
+  padding: 8px 18px;
+  border: 2px solid $coral;
+  background-color: white;
+  color: $coral;
+
+  &:hover {
+    background-color: $coral;
+    color: $white;
+  }
+
+  p {
+    margin: 0;
+  }
 }
