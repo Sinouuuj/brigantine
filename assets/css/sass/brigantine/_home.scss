@@ -61,7 +61,7 @@
     p {
       span {
         font-weight: bold;
-        font-size: 20px
+        font-size: 23px
       }
     }
 
@@ -120,6 +120,10 @@
             p {
               margin-top: 0;
               text-align: left;
+
+              span {
+                font-size: 20px;
+              }
 
               &.description {
                 color: $grey;
