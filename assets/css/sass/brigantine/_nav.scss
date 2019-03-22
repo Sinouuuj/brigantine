@@ -1,8 +1,21 @@
 header {
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 63px;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $lightgrey;
+  }
+
   nav {
     position: relative;
     box-shadow: none;
     background-color: #fff;
+
+
 
     #logo {
       position: absolute;
@@ -25,9 +38,25 @@ header {
 
         a {
           color: #000;
+          position: relative;
 
           &:hover {
             background-color: transparent;
+          }
+
+          &.active {
+            font-weight: bold;
+
+            &::after {
+              content: '';
+              position: absolute;
+              bottom: 0;
+              left: -0.75rem;
+              width: calc(100% + 1.5rem);
+              height: 2px;
+              background-color: $black;
+              z-index: 2;
+            }
           }
         }
 

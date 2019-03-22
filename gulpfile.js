@@ -49,7 +49,7 @@ gulp.task('watch', function () {
 
   gulp.watch(sass_dir+'/**/*.scss', ['sass']);
   gulp.watch("**/*.html").on('change', browserSync.reload);
-  gulp.watch("*.html").on('change', browserSync.reload);
+  // gulp.watch("*.html").on('change', browserSync.reload);
   // gulp.watch(js_dir+'/*.js').on('change', function(state){
   //   console.log(state.path);
   //   currentFile = state.path;

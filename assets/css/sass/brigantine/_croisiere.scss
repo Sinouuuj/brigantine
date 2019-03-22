@@ -1,0 +1,38 @@
+.croisiere {
+  background: url('../img/backgroundvert.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 0 200px;
+
+  h1 {
+    text-transform: none;
+    color: $black;
+    text-align: center;
+  }
+
+  p {
+    span {
+      font-weight: normal;
+      font-size: 23px;
+
+      &.title {
+        text-align: center;
+        display: block;
+      }
+    }
+  }
+
+  #cards {
+    background: none;
+
+    .cta {
+      background-color: $coral;
+      color: $white;
+
+      &:hover {
+        background-color: $white;
+        color: $coral;
+      }
+    }
+  }
+}
