@@ -1,0 +1,49 @@
+#petitsportsdiscrets, #gastronomie {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.8s ease;
+}
+#ilemorbihan {
+  transition: opacity 0.8s ease;
+}
+#map {
+  nav {
+    position: absolute;
+    top: 20%;
+    bottom: 0;
+    left: 8%;
+    margin: auto 0;
+    background: transparent;
+    box-shadow: none;
+    width: auto;
+
+    li {
+      float: none;
+      height: 18px;
+      margin-bottom: 15px;
+
+      a {
+        height: 100%;
+        color: $black;
+
+        &:hover {
+          background-color: transparent;
+        }
+
+        &.active {
+          font-weight: bold;
+        }
+
+        i {
+          height: 100%;
+          margin-right: 10px;
+
+          img {
+            height: 100%;
+            display: block;
+          }
+        }
+      }
+    }
+  }
+}
